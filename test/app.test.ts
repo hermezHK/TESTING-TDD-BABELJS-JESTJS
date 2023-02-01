@@ -1,16 +1,9 @@
-// import { describe,  it, vi, expect } from "vitest";
-// import http from "node:http";
+import { describe, it, expect } from "@jest/globals";
+import { sumar } from "../src/utlis/helper"
 
-// global.fetch = vi.fn()
+describe("primer test", () => {
+    it("sumando numeros", () => {
+        expect(sumar(1, 2)).toBe(3);
+    });
+});
 
-// describe("probando app", () => {
-//     it("esperamos esta de la aplicacion sea 200", async () => {
-//         const request = http.get("http://localhost:9000", (response) => {
-//             expect(response.statusCode).toBe(200);
-//     });
-
-//     request.on("error", (error) => {
-//         console.log(error);
-//     });
-//   });
-// });
